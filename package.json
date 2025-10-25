@@ -1,0 +1,20 @@
+{
+  "name": "cli-task-tracker",
+  "version": "1.0.0",
+  "description": "A CLI Task Tracker built with Nodejs",
+  "keywords": [
+    "Task",
+    "tracker"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "githubcom/@Amson-tECH"
+  },
+  "license": "MIT",
+  "author": "Reuben | reubenamuzu23@gmail.com",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
