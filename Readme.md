@@ -25,27 +25,27 @@ A simple command-line task tracker built with Node.js. Manage your tasks directl
 
 ### Add a new task
 ```bash
-index.js add "Buy groceries"
+node index.js add "Buy groceries"
 ```
 
 ### List all tasks
 ```bash
-index.js list
+node index.js list
 ```
 
 ### Mark a task as done
 ```bash
-index.js done 1
+node index.js done 1
 ```
 
 ### Delete a task
 ```bash
-index.js delete 1
+node index.js delete 1
 ```
 
 ### Show help
 ```bash
-index.js
+node index.js
 ```
 
 ## How it works
