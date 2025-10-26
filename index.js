@@ -31,7 +31,7 @@ switch (command) {
     const tasks = loadTasks();
     if (tasks.length === 0) console.log("📭 No tasks yet.");
     console.log("\n📝 Your Tasks:");
-    tasks.forEach(t => {
+    tasks.forEach((t) => {
       const status = t.done ? "✅" : "❌";
       console.log(`${t.id}. ${status} ${t.name}`);
     });
@@ -41,7 +41,7 @@ switch (command) {
   case "done": {
     const id = parseInt(args[0]);
     const tasks = loadTasks();
-    const task = tasks.find(t => t.id === id);
+    const task = tasks.find((t) => t.id === id);
     if (!task) console.log("⚠️ Task not found!");
     task.done = true;
     saveTasks(tasks);
@@ -52,8 +52,8 @@ switch (command) {
   case "delete": {
     const id = parseInt(args[0]);
     let tasks = loadTasks();
-    const newTasks = tasks.filter(t => t.id !== id);
-    if (newTasks.length === tasks.length)  console.log("⚠️ Task not found!");
+    const newTasks = tasks.filter((t) => t.id !== id);
+    if (newTasks.length === tasks.length) console.log("⚠️ Task not found!");
     saveTasks(newTasks);
     console.log(`🗑️ Deleted task ${id}.`);
     break;
